@@ -22,6 +22,16 @@ subprojects {
         mavenCentral()
     }
 
+    ext {
+        set('springCloudVersion', "2024.0.0")
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+    }
+
     dependencies {
         implementation 'org.springframework.boot:spring-boot-starter-web'
         compileOnly 'org.projectlombok:lombok'
