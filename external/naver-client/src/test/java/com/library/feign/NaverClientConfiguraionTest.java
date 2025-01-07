@@ -22,7 +22,7 @@ class NaverClientTest {
 
     @Test
     void callNaver() {
-        String http = naverClient.search(SearchParam.builder().query("HTTP").start(1).display(10).build());
+        String http = naverClient.search("http",1,10);
         System.out.println(http);
 
         assertFalse(http.isEmpty());
