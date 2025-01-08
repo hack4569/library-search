@@ -1,7 +1,7 @@
 package com.library.feign
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.library.feign.exception.ApiException
+import com.library.exception.ApiException
 import feign.Request
 import spock.lang.Specification
 

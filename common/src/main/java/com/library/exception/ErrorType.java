@@ -1,4 +1,4 @@
-package com.library.feign.exception;
+package com.library.exception;
 
 import lombok.Getter;
 
