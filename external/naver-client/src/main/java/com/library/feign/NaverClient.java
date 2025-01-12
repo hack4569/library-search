@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "naverClient", url = "${external.naver.url}", configuration = NaverClientConfiguraion.class)
 public interface NaverClient {
     @GetMapping("/v1/search/book.json")
-    String search(@RequestParam("query") String query,
+    NaverBookResponse search(@RequestParam("query") String query,
                   @RequestParam("start") int start,
                   @RequestParam("display") int display);
 }
