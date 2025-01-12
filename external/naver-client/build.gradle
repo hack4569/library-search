@@ -1,2 +1,5 @@
-
+dependencies {
+    implementation project(':common')
+    api 'org.springframework.cloud:spring-cloud-starter-openfeign'
+}
 
